@@ -40,3 +40,17 @@ export function useWindowSize() {
 
   return windowSize;
 }
+
+// helpers
+export const addZeroToDate = (str) => {
+	if (`${str}`.length === 1) return `0${str}`
+	return str
+}
+export const fromStrToDate = (str) => {
+	if (!str) return str
+	const dateStr = str.split('.')
+	return new Date(dateStr[2], dateStr[1] - 1, dateStr[0])
+}
+export const fromDateToStr = (date) => {
+	return `${addZeroToDate(date.getDate())}.${addZeroToDate(date.getMonth() + 1)}.${date.getFullYear()}`
+}

@@ -1,0 +1,1 @@
+export const hook = 'https://gorkygorod.bitrix24.ru/rest/48348/9ptulrh5zbjj85t0/';

@@ -1,0 +1,7 @@
+.drop_area {
+  border-radius: 16px;
+
+  & > div {
+    border-radius: 16px;
+  }
+}
